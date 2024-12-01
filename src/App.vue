@@ -144,7 +144,8 @@ const openModal = (character) => {
                   'btn-secondary': selectedCharacter.status === 'unknown',
                   'btn-danger': selectedCharacter.status === 'Dead',
                 }"
-                class="btn d-block mx-auto mb-3 w-100"
+                class="btn d-block mx-auto mb-3 w-50"
+                style="pointer-events: none;"
               >
                 {{ selectedCharacter.status }}
               </button>
