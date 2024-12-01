@@ -10,23 +10,17 @@ export const fetchDefaultCharacters = async () => {
   }
 };
 
-// Fetch filtered characters based on query parameters
+// Fetch filtered characters based on name
 export const fetchFilteredCharacters = async (filters) => {
-  const { name = '', status = '', species = '', type = '', gender = '' } = filters;
+  const { name } = filters; // Only filter by name now
 
-  // Constructing the query string based on provided filters
-  //Still in progess
-  const query = new URLSearchParams({
-    name,
-    status,
-    species,
-    type,
-    gender,
-  }).toString();
+  // Build the query string with only the 'name' filter
+  const queryParams = new URLSearchParams();
+  if (name) queryParams.append('name', name); // Only append 'name' if it's not empty
 
   try {
-    console.log("fetching by query");
-    const response = await fetch(`https://rickandmortyapi.com/api/character/?${query}`);
+    console.log("Fetching characters by query: ", queryParams.toString());
+    const response = await fetch(`https://rickandmortyapi.com/api/character/?${queryParams.toString()}`);
     const data = await response.json();
     return data.results || []; // Return filtered results or empty array
   } catch (error) {
