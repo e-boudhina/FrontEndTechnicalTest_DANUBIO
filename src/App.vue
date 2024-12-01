@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, computed, watch } from 'vue';
-import { fetchDefaultCharacters, fetchFilteredCharacters } from './services/api'; // Updated API service
+import { fetchDefaultCharacters, fetchFilteredCharacters } from './services/api';
 import * as bootstrap from 'bootstrap';
 
 const characters = ref([]); // Store all fetched characters
@@ -9,10 +9,10 @@ const selectedCharacter = ref(null); // Store the selected character for the mod
 
 const filters = ref({
   name: '',
-  status: '',
-  species: '',
-  type: '',
-  gender: '',
+  //status: '',
+  //species: '',
+  //type: '',
+  //gender: '',
 });
 
 // Fetch all characters when the component mounts
