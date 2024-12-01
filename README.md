@@ -34,3 +34,14 @@ npm install
 ```
 npm run serve
 ```
+
+# Dependencies
+
+This project uses the following dependencies:
+
+   - **Bootstrap 5.3.3** For styling and responsive design. To check the installed Bootstrap version run `npm list bootstrap`
+   - **VueJS 3.5.13** JavaScript framework for building the UI. To check the installed Vue version, run `npm list vue `
+
+## Happy Coding! 🚀
+
+<marquee>Happy Coding! 🎉🚀 Keep building awesome projects!</marquee>
