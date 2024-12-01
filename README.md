@@ -22,7 +22,7 @@ git clone https://github.com/e-boudhina/FrontEndTechnicalTest_DANUBIO.git
 
 ### 2.  Navigate to the project directory:
 ```
-cd vuejs-technical-test
+cd FrontEndTechnicalTest_DANUBIO
 ```
 
 ## 3. Project setup
